@@ -13,6 +13,8 @@ class Photo < ActiveRecord::Base
   #   },
   # default_url: "/images/:style/missing.png"
 
+  belongs_to :user
+
   has_attached_file :image,
       styles: {
         :thumb => '500x500^',

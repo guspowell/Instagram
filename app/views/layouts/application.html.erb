@@ -14,7 +14,7 @@
   <ul>
 
     <div class='logo'>
-      <li><a class='insta' href=# style='text-decoration:none; color:white'>Instagram</a></li>
+      <li>Instagram</a></li>
     </div>
 
     <div class='user-mgmt'>
@@ -37,8 +37,12 @@
 
 </section>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<% if flash[:notice] %>
+<section class='banner'>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</section>
+<% end %>
 
 <%= yield %>
 

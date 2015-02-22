@@ -1,12 +1,20 @@
 .header {
   width: 88%;
   height: 5%;
-  background-color: #3083AC;
+  background-color: #3d6b92;
   color: white;
   font-size: 1.2em;
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 0.8%;
+}
+
+.banner {
+  background-color: white;
+  height: 3.5%;
+  color: #737373;
+  text-align: center;
+  padding-top: 1%;
 }
 
 .user-mgmt {
@@ -17,18 +25,21 @@
   display: inline-block;
   float: left;
   margin-left: 5%;
-  padding: 0.5% 0 0.5% 0;
+  padding: 0 0 0.5% 0;
   color: white;
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em;
   }
 
 .username {
-  height: 100%;
   display: inline-block;
   float: right;
   padding: 0.5% 1% 0.5% 1%;
   margin-left: 2%;
   text-decoration: none;
   color: white;
+  font-size: 1em;
 }
 
 .user-mgmt li, .user-mgmt li:link, .user-mgmt li:visited, .user-mgmt li:hover, .user-mgmt li:active {

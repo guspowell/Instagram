@@ -1,11 +1,19 @@
-<% if @photos.any? %>
-  <% @photos.each do |photo| %>
-    <%= photo.caption %>
-  <% end %>
-<% else %>
-  No photos yet
-<% end %>
+<section class='all-photos'>
 
+  <section class='add-photo-header'>
+    <div class='add-photo-button'><a href='/photos/new'>Add photo</a></div>
+  </section>
 
+  <section class='photo-container'>
+    <% if @photos.any? %>
+      <% @photos.each do |photo| %>
+        <%= image_tag photo.image.url(:preview), :class => "image" %>
+        <div class='caption'><%= photo.caption %></div>
+        <div class='caption'>Likes</div>
+      <% end %>
+    <% else %>
+      No photos yet
+    <% end %>
+  </section>
 
-<a href='/photos/new'>Add photo</a>
+</section>

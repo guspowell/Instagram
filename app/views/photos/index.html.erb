@@ -4,14 +4,13 @@
     <div class='add-photo-button'><a href='/photos/new'>Add photo</a></div>
   </section>
 
-
     <% if @photos.any? %>
       <% @photos.each do |photo| %>
 
       <section class='photo-container'>
 
         <%= image_tag photo.image.url(:preview), :class => "image" %>
-        <div class='caption'><%= photo.caption %></div>
+        <div class='caption'><%= photo.user.username %><%= photo.caption %></div>
         <div class='caption'>Likes: 0</div>
 
       </section>

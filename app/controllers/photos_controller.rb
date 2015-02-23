@@ -9,7 +9,9 @@ class PhotosController < ApplicationController
   end
 
   def create
-    Photo.create(photo_params)
+    @photo = Photo.new(photo_params)
+    @photo.user = current_user
+    @photo.save
     redirect_to '/photos'
   end
 

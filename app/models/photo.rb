@@ -14,6 +14,7 @@ class Photo < ActiveRecord::Base
   # default_url: "/images/:style/missing.png"
 
   belongs_to :user
+  has_many :endorsements
 
   has_attached_file :image,
       styles: {

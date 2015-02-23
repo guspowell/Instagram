@@ -10,9 +10,8 @@
       <section class='photo-container'>
 
         <%= image_tag photo.image.url(:preview), :class => "image" %>
-        <div class='caption'><%= photo.caption %></div>
-        <div class='caption'>Likes: 0</div>
-
+        <div class='caption'><span style='color:#3f729b;font-weight:600'><%= photo.user.username %></span> <%= photo.caption %></div>
+        <div class='caption'><p><%= pluralize photo.endorsements.count, 'like' %></p></div>
       </section>
 
 

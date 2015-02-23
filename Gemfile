@@ -27,6 +27,10 @@ gem 'paperclip'
 
 gem 'devise'
 
+gem 'poltergeist'
+
+gem 'database_cleaner'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -35,7 +35,7 @@
   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
     <%= f.email_field :email, :autofocus => true, :placeholder => 'Email address' %>
     <%= f.password_field :password, :placeholder => 'password' %>
-    <%= f.submit "Sign in", :class=>'submit-button' %>
+    <%= f.submit "Sign in", :class =>'submit-button' %>
   <% end %>
   <h3><%= render "devise/shared/links" %><h3>
 </div>

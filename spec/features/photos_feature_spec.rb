@@ -6,8 +6,8 @@ feature 'photos' do
 
     scenario 'should have a prompt to add a photo' do
       visit '/photos'
-      expect(page).to have_content 'No photos'
-      expect(page).to have_link 'Add photo'
+      expect(page).to have_content 'No photos yet'
+      expect(page).to have_content 'Add photo'
     end
 
   end

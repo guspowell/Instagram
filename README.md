@@ -57,3 +57,4 @@ To Do
 - Add relationships between users, comments and likes.
 - Style the sign in and sign up links.
 - Make the page responsive.
+- Make it so you can only see posts when you are logged in

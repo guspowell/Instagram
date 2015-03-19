@@ -4,7 +4,7 @@ Instagram in Rails
 Introduction
 --------------------
 
-After five days of learning Rails, the Makers Academy weekend challenge was to reproduce Instagram. 
+After four days of learning Rails, the weekend challenge was to replicate Instagram using everything we had learnt that week.
 
 Screenshot
 ---------------
@@ -17,15 +17,40 @@ Languages - Frameworks - Tools
 
 - Ruby on Rails
 - Paperclip
-- Rspec
+- RSpec
 - Devise
 
 
 Instructions
 ------------------
-```bundle install``` download bundle
-
-```rspec``` will run rspec feature and unit tests
+Clone the repository:
+```
+$ git clone git@github.com:bebbs/instagram-challenge.git
+```
+Change into the repository:
+```
+$ cd instagram-challenge
+```
+Install all the dependencies:
+```
+$ bundle install
+```
+Create the database:
+```
+$ psql
+=# CREATE DATABASE instagram_challenge_test;
+=# CREATE DATABASE instagram_challenge_development;
+=# \q
+```
+Run the tests:
+```
+$ rspec
+```
+To view the app, start the rails server:
+```
+$ rails server
+```
+Visit http://localhost:3000/
 
 To Do
 ------------------
